@@ -85,7 +85,20 @@ namespace Martini_CSharp
             }
             Console.ReadKey();
 
+            // Fonction pow:
 
+            Console.WriteLine("Fonction puissance");
+
+            Console.WriteLine("Introduire le premier nombre");
+            entree = Console.ReadLine();
+            entree_A = int.TryParse(entree, out A);
+
+            Console.WriteLine("Introduire le deuxième nombre");
+            entree = Console.ReadLine();
+            entree_B = int.TryParse(entree, out B);
+            if (B > 0){
+                Pow.Puissance(A, B);
+            }
         }
     }
 }
