@@ -51,11 +51,11 @@ namespace Martini_CSharp
             {
                 Operations.Soustraction(A, B);
             }
-            else if (oper == "+")
+            else if (oper == "*")
             {
                 Operations.Produit(A, B);
             }
-            else if (oper == "+")
+            else if (oper == "/")
             {
                 Operations.Quotien(A, B);
             }
@@ -64,6 +64,27 @@ namespace Martini_CSharp
                 Console.WriteLine($"{A} {oper} {A} = Opération invalide");
             }
             Console.ReadKey();
+
+            // Division entiere:
+            Console.WriteLine("Division entière");
+
+            Console.WriteLine("Introduire le premier nombre");
+            entree = Console.ReadLine();
+            entree_A = int.TryParse(entree, out A);
+
+            Console.WriteLine("Introduire le deuxième nombre");
+            entree = Console.ReadLine();
+            entree_B = int.TryParse(entree, out B);
+            if (B != 0)
+            {
+                Division_entiere.IntegerDivision(A, B);
+            }
+            else
+            {
+                Console.WriteLine(A + "/" + B + "= Opération invalide");
+            }
+            Console.ReadKey();
+
 
         }
     }

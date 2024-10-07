@@ -27,7 +27,7 @@ namespace Martini_CSharp.Serie1
             Console.WriteLine(a + "*" + b + "=" + resultat);
             }
 
-           public static void Quotien(int a, int b)
+            public static void Quotien(int a, int b)
             {
             if (b != 0)
             {
@@ -37,12 +37,11 @@ namespace Martini_CSharp.Serie1
             else
             {
                 Console.WriteLine(a + "/" + b + "= Opération invalide");
-
             }
 
         }
 
-
+            
 
     }
 }
